@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clg website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <div class="logo">
+            <img src="images/logo3.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Courses</h1>
+        </section>
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>We offer specialized courses like MPHW, AET, Dairying, Fisheries, and EET to equip you with hands-on experience and practical knowledge. Boost your career with industry-relevant skills and expertise!</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>MPHW (Multi-Purpose Health Worker)</h3>
+                    <p>Dive into the healthcare field and make a difference in community health.</p>
+                </div>
+                <div class="course-col">
+                    <h3>AET (Agricultural Engineering Technology)</h3>
+                    <p>Learn cutting-edge technologies to revolutionize farming practices.</p>
+                </div>
+                <div class="course-col">
+                    <h3>DAIRYING</h3>
+                    <p>Master the science and business of dairy production and management.</p>
+                </div>
+                <div class="course-col">
+                    <h3>FISHERIES</h3>
+                    <p> Explore sustainable aquaculture and fisheries management techniques.</p>
+                </div>
+                <div class="course-col">
+                    <h3>EET (Electrical Engineering Technology)</h3>
+                    <p> Gain expertise in electrical systems and technologies to power your career.</p>
+                </div>
+            </div>
+        </section>
+        <!----facilities-->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Equipped with practical labs, a comprehensive library, and enriching field trips, our facilities provide a dynamic environment for hands-on learning and real-world skill development</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/lib.jpg">
+                <h3>Library</h3>
+                <p>Our library is a treasure trove of knowledge, offering extensive resources to inspire learning, research, and academic excellence.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/newyork2.png">
+                <h3>O.J.T Training L&MD Students</h3>
+                <p>Through On-the-Job Training (O.J.T), L&MD students gain invaluable hands-on experience, bridging academic knowledge with industry practices</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/labs.png">
+                <h3>Labs</h3>
+                <p>Our state-of-the-art labs provide a platform for innovation, experimentation, and practical application of theoretical knowledge.</p>
+            </div>
+        </div>
+    </section>
+    <!----facilities-->
+    <section class="facilities">
+        <h1>Field Work</h1>
+        <p>Fieldwork is hands-on experience gained outside the classroom, where individuals apply theoretical knowledge to real-world situations. In fields like veterinary dairying, it involves tasks such as animal care and farm management, helping to build practical skills and enhance learning.
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/d1.png">
+                <h3>Dairying</h3>
+                <p>Dairying involves the care and management of dairy animals, primarily cows, for the production of milk and other dairy products. It includes activities such as milking, feeding, breeding, and maintaining the health of the animals, with the goal of producing high-quality dairy products for consumption.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/d2.png">
+                <h3>Veterinary</h3>
+                <p>Veterinary science focuses on the health and care of animals. It involves diagnosing and treating diseases, injuries, and illnesses in animals, as well as providing preventative care such as vaccinations. Veterinarians play a crucial role in ensuring the well-being of pets, livestock, and wildlife.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/n1.png">
+                <h3>Nursing</h3>
+                <p>Nursing involves providing care and support to patients, focusing on their physical, emotional, and mental well-being. Nurses assess patients' conditions, administer treatments, monitor progress, and offer guidance to help patients recover. They play a vital role in the healthcare team, ensuring that patients receive the necessary care and attention throughout their recovery process.</p>
+            </div>
+        </div>
+    </section>
+
+    
+
+    
+    <!---footer---->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Address:<br>Gandhi nagar 8th lane , back side of muntaj Hotel<br> s.kota Mandal(srungavarapu kota) , Vizianagaram district.<br>
+        Contact no: 9440934298 , pincode :535145</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>THANK YOU!!<i class="fa-solid fa-heart"></i></p>
+    </section>
+    
+    <!------javascrip for toggle menu-------------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

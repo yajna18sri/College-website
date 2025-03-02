@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clg website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <section class="sub-header">
+        <div class="logo">
+            <img src="images/logo3.png" alt="Logo">
+        </div>
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Empowering vocational success. </h1>
+    </section>
+<!-----blog-->
+<section class="campus">
+    <h1>Our student achievements</h1>
+    <p>Our students have consistently excelled in academics and practical skills, achieving remarkable success in vocational inter exams. Their dedication and hard work are reflected in outstanding marks and accolades. These achievements highlight their readiness for professional excellence and future opportunities.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/ach1.png">
+            <div class="layer">
+                <h3>first year 2024</h3>
+            </div>
+            
+        </div>
+        <div class="campus-col">
+            <img src="images/ach2.png">
+            <div class="layer">
+                <h3>second year 2024</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/ach3.png">
+            <div class="layer">
+                <h3>2023</h3>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="comment-box">
+        <h3> Leave a comment</h3>
+        <form action="" class="comment-form">
+            <input type="text" placeholder="Enter Name">
+            <input type="text" placeholder="Enter Email">
+            <textarea rows="5" placeholder="Your Comment"></textarea>
+            <button type="submit" class="hero-btn red-btn"> POST CoMMENT</button>
+        </form>
+    </div>
+</section>
+
+
+    
+    <!---footer---->
+    <section class="footer">
+        <h3>About Us</h3>
+        <p>Address:<br>Gandhi nagar 8th lane , back side of muntaj Hotel<br> s.kota Mandal(srungavarapu kota) , Vizianagaram district.<br>
+        Contact no: 9440934298 , pincode :535145</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>THANK YOU!!<i class="fa-solid fa-heart"></i></p>
+    </section>
+    
+    <!------javascrip for toggle menu-------------->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
